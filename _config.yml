@@ -13,9 +13,9 @@ author: APS-AD communications
 
 # --- List of links in the navigation bar --- #
 
-navbar-links:
-  Home: "/"
-  Abstracts: "abstracts"
+# navbar-links:
+#   Home: "/"
+#   Abstracts: "abstracts"
 
 
 # navbar-links:
