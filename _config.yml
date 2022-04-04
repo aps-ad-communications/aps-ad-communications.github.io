@@ -4,6 +4,22 @@
 # the initial set up you won't need to come back to this file often.
 
 # --- Required options --- #
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
 
 # Name of website
 title: APS-AD communications
@@ -210,6 +226,8 @@ footer-hover-col: "#0085A1"
 #  theme: light
 
 # --- Misc --- #
+site-css: "/assets/css/custom-styles.css"
+site-js: "/assets/js/custom-script.js"
 
 # Ruby Date Format to show dates of posts
 date_format: "%B %-d, %Y"
@@ -237,13 +255,32 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: false
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
   -
     scope:
-      path: "" # any file that's not a post will be a "page" layout by default
+      path: "notblog"
+    values:
+      layout: "post"
+      carbonads: true
+      comments: true
+      social-share: true
+      show-share: true
+      show-subscribe: false
+      support_promo_box: true
+      after-content: [share-section.html, scroll-box.html]
+  -
+    scope:
+      path: "pages"
     values:
       layout: "page"
+      comments: true
+
 
 # Exclude these files from production site
 exclude:
@@ -256,9 +293,6 @@ exclude:
   - screenshot.png
   - docs/
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
