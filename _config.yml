@@ -220,7 +220,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
-gtag: "G-WL3LV255KF"
+gtag: "G-SG14EYMK5T"
 kramdown:
   input: GFM
 
