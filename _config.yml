@@ -8,13 +8,11 @@
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-include-cache
 
 
 # Name of website
